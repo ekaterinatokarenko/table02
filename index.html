@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Personal information</h1>
+    <form method="post" action="https://formspree.io/ekaterinatokarenko777@gmail.com">
+    <label for="name">Name:</label><br>
+        <input type="text" id="name" name="user-name"><br>
+    <label for="mail">E-mail:</label><br>
+        <input type="email" id="mail" name="user-mail"><br>
+    <label>Password:<br>
+        <input type="password" name="client-password">
+    </label><br>
+    <label>Gender:</label><br>
+    <label>
+        <input type="radio" name="gender" value="male"> Male
+    </label>
+    <label>
+        <input type="radio" name="gender" value="female"> Female
+    </label>
+    <label>
+        <input type="radio" name="gender" value="other"> Other
+    </label><br>
+    <label for="card">
+        <span>Card type:</span>
+    </label>
+    <select id="card" name="usercard">
+        <option value="visa">Visa</option>
+        <option value="mc">Mastercard</option>
+        <option value="amex">American Express</option>
+    </select>
+    <h1>Questions</h1>
+    <label>1. What music do you listen to?</label><br>
+    <label for="instruments">Instruments</label>
+        <input type="checkbox" id="instruments" name="music" value="instruments"><br>
+    <label for="pop">New pop music</label>
+        <input type="checkbox" id="pop" name="music" value="pop"><br>
+    <label for="1980s">1980s</label>
+        <input type="checkbox" id="1980s" name="music" value="1980s"><br>
+    <label for="acapella">Acapella</label>
+        <input type="checkbox" id="acapella" name="music" value="acapella"><br>
+    <label for="color">2. What is your favourite color?</label><br>
+        <input type="text" id="color" name="color" list="colorList">
+    <datalist id="colorList">
+        <label for="suggestion"></label>
+            <select id="suggestion">
+                <option>Orange</option>
+                <option>White</option>
+                <option>Blue</option>
+                <option>Brown</option>
+                <option>Red</option>
+                <option>Yellow</option>
+                <option>Green</option>
+                <option>Black</option>
+            </select>
+    </datalist><br>
+    <label>3. What is your age?</label><br>
+    <label>
+        <input type="radio" name="age" value="7 and under" checked> 7 and under
+    </label><br>
+    <label>
+        <input type="radio" name="age" value="8 - 9" checked> 8 - 9
+    </label><br>
+    <label>
+        <input type="radio" name="age" value="9 -10" checked> 9 - 10
+    </label><br>
+    <label>
+        <input type="radio" name="age" value="12 and over" checked> 12 and over
+    </label><br>
+    <label for="msg">4. What is the funniest story in your life?</label><br>
+        <textarea id="msg" name="user-message"></textarea><br>
+    <button type="submit">SEND</button>
+    </form>
+    <a href="table.html">Table</a>
+</body>
+</html>
